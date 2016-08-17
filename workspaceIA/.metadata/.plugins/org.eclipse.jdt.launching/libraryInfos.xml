@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\jsh\topcased\Topcased-5.3.1\jre" version="1.6.0_10-rc2">
+<bootpath>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\resources.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\rt.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\sunrsasign.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\jsse.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\jce.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\charsets.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\jsh\topcased\Topcased-5.3.1" version="1.6.0_10-rc2">
+<bootpath>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\resources.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\rt.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\sunrsasign.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\jsse.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\jce.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\charsets.jar"/>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\jsh\topcased\Topcased-5.3.1\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

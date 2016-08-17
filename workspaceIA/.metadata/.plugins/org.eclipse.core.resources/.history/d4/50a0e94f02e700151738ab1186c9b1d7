@@ -1,0 +1,20 @@
+package ecoResolution;
+
+import java.util.*;
+
+public abstract class Eco_Agent {
+	
+	private String propriete;
+	private boolean sat;
+	private ArrayList independance = new ArrayList();
+	
+	
+	private boolean satisfait(){
+		return sat;
+	}
+	private void fuir(){
+		
+	}
+	private 
+
+}

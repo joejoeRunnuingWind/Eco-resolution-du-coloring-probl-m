@@ -1,0 +1,8 @@
+package ecoResolution;
+
+public abstract class Eco_Resolution {
+
+	void initialiser();
+	
+	
+}

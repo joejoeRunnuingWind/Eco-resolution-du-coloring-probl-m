@@ -1,0 +1,16 @@
+package ecoResolution;
+
+public abstract class Eco_Agent {
+	
+	private abstract propriete;
+	private boolean sat;
+	
+	private boolean satisfait(){
+		return sat;
+	}
+	private void fuir(){
+		
+	}
+	private 
+
+}

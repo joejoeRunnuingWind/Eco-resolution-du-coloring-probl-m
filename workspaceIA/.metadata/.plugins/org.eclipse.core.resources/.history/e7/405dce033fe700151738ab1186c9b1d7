@@ -1,0 +1,121 @@
+package ecoResolution;
+
+import java.util.*;
+
+public class Sommet extends Eco_Agent{
+	
+	private int id;
+	private String couleur;
+	private ArrayList<Sommet> dependances = new ArrayList<Sommet>();
+	private boolean sat = false;
+	private ArrayList<String> listeCouleur = new ArrayList<String>();
+	
+	
+	public void setId(int i){
+		
+		this.id = i;
+		
+	}
+	
+	public int getId(){
+		
+		return id;
+		
+	}
+	public void setCouleur(String c){
+		
+		this.couleur = c;
+		
+	}
+	
+	public String getCouleur(){
+		
+		return couleur;
+
+	}
+	
+	public void setSat(boolean s){
+		
+		this.sat = s;
+	
+	}
+	
+	public boolean getSat(){
+		
+		return sat;
+	
+	}
+	
+	public void setListeCouleur(ArrayList<String> l){
+		
+		this.listeCouleur = l;
+		
+	}
+	
+	public ArrayList<String> getListeCouleur(){
+		
+		return listeCouleur;
+		
+	}
+
+	public void setDependances(ArrayList<Sommet> list){
+		
+		dependances = list;
+		
+	}
+	
+	public ArrayList<Sommet> getDependances(){
+		
+		return dependances;
+		
+	}
+	
+	public boolean satisfait(){
+		
+		sat = true;
+		if( dependances != null){
+			for(int i = 0; i < dependances.size(); i++){
+				//System.out.print(dependances.get(i).getCouleur());
+				if (dependances.get(i).getCouleur().equals(couleur)){
+					sat = false;
+					}
+			}
+		}
+		return sat;
+		
+	}
+	
+	public void fuir(String couleurOccupee){
+		
+		while(couleur.equals(couleurOccupee)){
+			Random r = new Random();
+			int k = r.nextInt(listeCouleur.size());
+			couleur = listeCouleur.get(k);		
+			System.out.println(couleur);
+		}
+			
+	}
+	
+	public void attaquer(){
+		
+		
+	}
+	
+	public Sommet(){
+		
+		super();
+	
+	}
+	
+	public Sommet(int id, String couleur, ArrayList<Sommet> dependances, ArrayList<String>listeCouleur, boolean sat){
+		
+		super();
+		this.id = id;
+		this.couleur = couleur;
+		this.dependances = dependances;
+		this.listeCouleur = listeCouleur;
+		this.sat = sat;
+	
+	}
+	
+}

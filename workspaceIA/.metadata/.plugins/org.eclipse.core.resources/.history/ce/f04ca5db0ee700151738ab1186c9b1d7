@@ -1,0 +1,15 @@
+package ecoResolution;
+
+import java.util.*;
+
+public abstract class Eco_Agent {
+	
+
+	private boolean sat;		
+	
+	abstract void satisfait()
+	
+	abstract void fuir();
+	
+
+}

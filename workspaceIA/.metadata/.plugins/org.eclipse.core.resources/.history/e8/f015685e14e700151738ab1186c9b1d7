@@ -1,0 +1,87 @@
+package ecoResolution;
+
+import java.util.*;
+
+public class Sommet extends Eco_Agent{
+	
+	private String couleur;
+	private ArrayList<Sommet> independances = new ArrayList<Sommet>();
+	private boolean sat = false;
+	private ArrayList<String> listeCouleur = new ArrayList<String>();
+	
+	
+	public void setCouleur(String c){
+		
+		this.couleur = c;
+		
+	}
+	
+	public String getCouleur(){
+		
+		return couleur;
+
+	}
+	
+	public void setSat(boolean s){
+		
+		this.sat = s;
+	
+	}
+	
+	public boolean getSat(){
+		
+		return sat;
+	
+	}
+	
+	public void setListeCouleur(ArrayList<String> l){
+		
+		this.listeCouleur = l;
+		
+	}
+	
+	public ArrayList<String> getListeCouleur(){
+		
+		return listeCouleur;
+		
+	}
+
+	public void setIndependances(ArrayList<Sommet> l){
+		
+		this.independances = l;
+		
+	}
+	
+	public ArrayList<String> getListeCouleur(){
+		
+		return listeCouleur;
+		
+	}
+	
+	public boolean satisfait(){
+		
+		sat = true;
+		if( independances != null){
+			for(int i = 0; i < independances.size(); i++){
+				if (independances.get(i).getCouleur().equals(couleur)){
+					sat = false;
+					}
+			}
+		}
+		return sat;
+		
+	}
+	
+	public void fuir(String couleurOccupee){
+		
+		while(couleur.equals(couleurOccupee)){
+			Random r = new Random();
+			int k = r.nextInt(independances.size());
+			couleur = listeCouleur.get(k);			
+		}
+		
+		
+	}
+		
+
+}
